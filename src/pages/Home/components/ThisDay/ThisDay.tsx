@@ -7,7 +7,7 @@ interface Props {
 
  export const ThisDay = (props: Props) => {
  return (
-    <header className={s.this__day}>
+    <div className={s.this__day}>
       <div className={s.top__block}>
         <div className={s.top__block_wrapper}>
           <div className={s.this__temp}>20°</div>
@@ -23,7 +23,7 @@ interface Props {
           Время: <span>Batumi</span>
         </div>
       </div>
-    </header>
+    </div>
   )
 }
 
