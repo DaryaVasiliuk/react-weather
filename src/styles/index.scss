@@ -7,11 +7,12 @@
   box-sizing: border-box;
 }
 
-body{
+body {
+  position: relative;
   font-family: 'Montserrat', sans-serif;
 }
 
-.container{
+.container {
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 20px;
