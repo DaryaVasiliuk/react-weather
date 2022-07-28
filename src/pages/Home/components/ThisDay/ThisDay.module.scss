@@ -4,7 +4,7 @@
   padding: 20px;
   width: 100%;
   max-width: 400px;
-  background: $light-background;
+  background: var(#{--components-background-default});
   box-shadow: $box-shadow;
   border-radius: $border-radius;
 }

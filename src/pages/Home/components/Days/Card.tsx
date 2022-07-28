@@ -8,6 +8,7 @@ interface Props {
 }
 
 export const Card = ({day}: Props) => {
+  console.log(s, day.icon_id)
   return (
      <div className={s.card}>
       <div className={s.day}>{day.day}</div>
