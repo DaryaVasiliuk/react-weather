@@ -3457,6 +3457,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.2.6:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
+  integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
+
 clean-css@^4.2.3:
   version "4.2.4"
   resolved "https://registry.npmjs.org/clean-css/-/clean-css-4.2.4.tgz"
@@ -9277,6 +9282,16 @@ react-app-polyfill@^2.0.0:
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
 
+react-city-input@^1.4.9:
+  version "1.4.9"
+  resolved "https://registry.yarnpkg.com/react-city-input/-/react-city-input-1.4.9.tgz#d6e9aa8a4e80f64b493cd62b04917b92a70af05f"
+  integrity sha512-0f0wER6xs7DDNOMARwshK911YDbc/6mEZs/3BItEgUuIKhLNBOF3sqZhWkcVfvGp97VmfKYvxIB19ZGJjhFI5g==
+  dependencies:
+    classnames "^2.2.6"
+    prop-types "^15.6.2"
+    react-onclickoutside "^6.7.1"
+    tether "^1.4.4"
+
 react-dev-utils@^11.0.3:
   version "11.0.4"
   resolved "https://registry.npmjs.org/react-dev-utils/-/react-dev-utils-11.0.4.tgz"
@@ -9335,6 +9350,11 @@ react-is@^18.0.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
+
+react-onclickoutside@^6.7.1:
+  version "6.12.2"
+  resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-6.12.2.tgz#8e6cf80c7d17a79f2c908399918158a7b02dda01"
+  integrity sha512-NMXGa223OnsrGVp5dJHkuKxQ4czdLmXSp5jSV9OqiCky9LOpPATn3vLldc+q5fK3gKbEHvr7J1u0yhBh/xYkpA==
 
 react-redux@^8.0.2:
   version "8.0.2"
@@ -10829,6 +10849,11 @@ test-exclude@^6.0.0:
     "@istanbuljs/schema" "^0.1.2"
     glob "^7.1.4"
     minimatch "^3.0.4"
+
+tether@^1.4.4:
+  version "1.4.7"
+  resolved "https://registry.yarnpkg.com/tether/-/tether-1.4.7.tgz#d56a818590d8fe72e387f77a67f93ab96d8e1fb2"
+  integrity sha512-Z0J1aExjoFU8pybVkQAo/vD2wfSO63r+XOPfWQMC5qtf1bI7IWqNk4MiyBcgvvnY8kqnY06dVdvwTK2S3PU/Fw==
 
 text-table@0.2.0, text-table@^0.2.0:
   version "0.2.0"

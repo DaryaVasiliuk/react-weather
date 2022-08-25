@@ -2,12 +2,15 @@ import React from 'react';
 import { GlobalSvgSelector } from '../../../../assets/icons/global/GlobalSvgSelector';
 import s from './ThisDay.module.scss';
 import { Weather } from '../../../../store/types/types';
+import { Time } from '../data_time/Time'
+import { Data } from '../data_time/Date'
 
 interface Props {
   weather: Weather;
 }
 
  export const ThisDay = ({weather}: Props) => {
+  console.log('weather',weather)
  return (
     <div className={s.this__day}>
       <div className={s.top__block}>
@@ -18,11 +21,14 @@ interface Props {
         <GlobalSvgSelector id = 'sun'/>
       </div>
       <div className={s.bottom__block}>
+        <div className = {s.this__date}>
+          Дата: <span><Data/></span>
+        </div>
         <div className={s.this__time}>
-          Время: <span>21:54</span>
+          Время: <span><Time/></span>
         </div>
         <div className={s.this__city}>
-          Время: <span>Batumi</span>
+          Город: <span>Batumi</span>
         </div>
       </div>
     </div>

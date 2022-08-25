@@ -1,14 +1,19 @@
 import React, { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
 import Select from 'react-select';
 import { GlobalSvgSelector } from '../../assets/icons/global/GlobalSvgSelector';
 import { Theme } from '../../context/ThemeContext';
 import { useTheme } from '../../hooks/useTheme';
+import { store } from '../../store/Store';
 import s from './Header.module.scss';
 import { Props } from './Props';
+import { fetchCurrentWeather } from '../../store/thunks/fetchCurrentWeather';
+// import City from 'react-city-input';
 
  {}
 
  export const Header = (props: Props) => {
+  const dispatch = useDispatch()
   const theme = useTheme();
   const options = [
     { value: 'city-1', label: 'Batumi' },
@@ -37,6 +42,16 @@ import { Props } from './Props';
     theme.changeTheme(theme.theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT);
   }
 
+  function handleInput(e:any) {
+      console.log(e.currentTarget.value)
+      // const{weather} = useCustomSelector(
+      //   selectCurrentWeatherData);
+    
+      // useEffect(() => {
+      //   dispatch(fetchCurrentWeather(e.currentTarget.value))
+      // }, []);
+  }
+
   return (
     <header className={s.header}>
       <div className={s.wrapper}>
@@ -48,9 +63,11 @@ import { Props } from './Props';
         <div className={s.change_theme} onClick={changeTheme}>
           <GlobalSvgSelector id='change-theme'/>
         </div>
-        <Select defaultValue={options[0]} 
+      <input type='text' onChange={handleInput} placeholder={""}></input>
+
+        {/* <Select defaultValue={options[0]} 
                 styles={colorStyles}
-                options={options} />
+                options={options} /> */}
       </div>
     </header>
   )

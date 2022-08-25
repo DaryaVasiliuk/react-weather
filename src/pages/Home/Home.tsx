@@ -8,7 +8,7 @@ import { fetchCurrentWeather } from '../../store/thunks/fetchCurrentWeather';
 import { selectCurrentWeatherData } from '../../store/selectors';
 
 interface Props {
-
+  currentCity: string
 }
 export const Home = (props: Props) => {
   const dispatch = useCustomDispatch();
@@ -17,14 +17,14 @@ export const Home = (props: Props) => {
     selectCurrentWeatherData);
 
   useEffect(() => {
-    dispatch(fetchCurrentWeather('Batumi'))
+    dispatch(fetchCurrentWeather(props.currentCity))
   }, []);
   
   return (
     <div className={s.home}>
       <div className={s.wrapper}>
         <ThisDay weather={weather}/>
-        <ThisDayInfo/>
+        <ThisDayInfo weather={weather}/>
       </div>
 
       <Days/>
